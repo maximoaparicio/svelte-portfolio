@@ -56,8 +56,6 @@
         <p>{tab.name}</p>
       </a>
     {/each}
-    <button on:click={toggleTheme}>
-      Toggle {localStorage.theme === "dark" ? "Light" : "Dark"} Mode
-    </button>
+    <button on:click={toggleTheme}> Toggle Mode </button>
   </div>
 </header>

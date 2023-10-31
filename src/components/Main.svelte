@@ -103,4 +103,71 @@
       </Step>
     </div>
   </section>
+  <section class="py-20 lg:py-32 flex flex-col gap-24" id="contact">
+    <div class="flex flex-col gap-2 text-center">
+      <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+        Get in <span class="inter text-green-500">Touch</span>
+      </h3>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-12 lg:gap-10">
+      <form
+        action="https://formspree.io/f/mdorjnrp"
+        method="POST"
+        class="flex flex-col w-full max-w-xl gap-2"
+      >
+        <div>
+          <label
+            for="nombre"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Who are you
+            <input
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg -500 -500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:-500 dark:-500"
+              type="nombre"
+              name="nombre"
+              id="nombre"
+              placeholder="Name"
+            />
+          </label>
+        </div>
+        <div>
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@example.com"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg -500 -500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:-500 dark:-500"
+            />
+          </label>
+        </div>
+
+        <div>
+          <label
+            for="message"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your message
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 -500 -500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:-500 dark:-500"
+              placeholder="Write your thoughts here..."
+            />
+          </label>
+        </div>
+        <button
+          class="blueShadow mx-auto text-base sm:text-lg md:text-xl inter relative overflow-hidden px-6 py-3 group rounded-full bg-slate-200 text-slate-950"
+          type="submit"
+        >
+          <div
+            class="absolute top-0 right-full w-full h-full bg-green-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
+          />
+          <h4 class="relative z-9">Send &rarr;</h4>
+        </button>
+      </form>
+    </div>
+  </section>
 </main>
