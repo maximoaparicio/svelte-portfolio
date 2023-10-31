@@ -46,24 +46,18 @@
       : " py-6 bg-transparent border-transparent")}
 >
   <i class="fa-sharp fa-solid fa-terminal" />
-  <div class="sm:flex items-center gap-4 hidden">
+  <div class="sm:flex items-center gap-4">
     {#each tabs as tab, index}
       <a
         href={tab.link}
-        class="duration-200 hover:text-green-500"
+        class="duration-200 hover:text-green-500 hidden sm:flex"
         target={index === 2 ? "_blank" : ""}
       >
         <p>{tab.name}</p>
       </a>
     {/each}
+    <button on:click={toggleTheme}>
+      Toggle {localStorage.theme === "dark" ? "Light" : "Dark"} Mode
+    </button>
   </div>
-  <!-- <button
-    class="blueShadow lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl inter relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 sm:hidden"
-  >
-    <div
-      class="absolute top-0 right-full w-full h-full bg-green-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
-    />
-    <h4 class="relative z-9">Get in touch</h4>
-  </button> -->
-  <button on:click={toggleTheme}>Toggle</button>
 </header>
