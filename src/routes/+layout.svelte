@@ -12,7 +12,9 @@
   }
 </script>
 
-<div class="relative flex flex-col mx-auto w-full text-sm sm:text-base">
+<div
+  class="relative flex flex-col mx-auto text-sm sm:text-base max-w-screen-2xl"
+>
   <div
     class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10]" +
       (y > 0
@@ -21,13 +23,13 @@
   >
     <button
       on:click={goTop}
-      class="ml-auto rounded-full p-4 bg-slate-900 text-green-500 hover:bg-slate-800 cursor-pointer"
+      class="ml-auto rounded-full p-4 dark:bg-slate-900 text-green-500 dark:hover:bg-slate-800 cursor-pointer hover:bg-slate-300 bg-slate-200"
     >
       <i class="fa-solid fa-arrow-up grid place-items-center" />
     </button>
   </div>
   <Header {y} />
-  <div class="max-w-8xl sm:px-4 mx-auto">
+  <div class="sm:px-4">
     <slot />
   </div>
   <Footer />
