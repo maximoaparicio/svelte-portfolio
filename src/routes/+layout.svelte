@@ -2,6 +2,7 @@
   import "../app.css";
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import { onMount } from "svelte";
 
   let y;
   let innerHeight = 0;
@@ -10,6 +11,22 @@
   function goTop() {
     document.body.scrollIntoView();
   }
+
+  function setTheme() {
+    const darkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "light";
+    }
+  }
+
+  onMount(setTheme);
 </script>
 
 <div

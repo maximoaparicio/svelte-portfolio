@@ -1,31 +1,16 @@
 <script>
+  import { Sun, Moon } from "lucide-svelte";
+  import { theme } from "$lib/stores/theme";
+  import { setContext } from "svelte";
+
   export let y;
 
   let tabs = [
     { name: "Projects", link: "#projects" },
-    { name: "About me", link: "#about" },
     { name: "Contact", link: "#contact" },
   ];
 
-  import { onMount } from "svelte";
-
-  // Function to set theme based on system preference
-  function setTheme() {
-    const darkMode =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    }
-  }
-
-  // Call setTheme when the component mounts
-  onMount(setTheme);
+  setContext("theme", theme);
 
   // Toggle theme
   function toggleTheme() {
@@ -36,6 +21,7 @@
       document.documentElement.classList.add("dark");
       localStorage.theme = "dark";
     }
+    theme.update((value) => (value === "light" ? "dark" : "light"));
   }
 </script>
 
@@ -56,6 +42,12 @@
         <p>{tab.name}</p>
       </a>
     {/each}
-    <button on:click={toggleTheme}> Toggle Mode </button>
+    <button on:click={toggleTheme}>
+      {#if $theme === "light"}
+        <Sun />
+      {:else}
+        <Moon />
+      {/if}
+    </button>
   </div>
 </header>

@@ -39,11 +39,6 @@ declare module '$env/static/private' {
 	export const ComSpec: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-<<<<<<< HEAD
-=======
-	export const FPS_BROWSER_APP_PROFILE_STRING: string;
-	export const FPS_BROWSER_USER_PROFILE_STRING: string;
->>>>>>> 1dbb61c73aaa3ff4893a998049193eaa59dbe530
 	export const GIT_ASKPASS: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
@@ -79,10 +74,6 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const NPM_PREFIX_NPM_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
-<<<<<<< HEAD
-=======
-	export const OneDrive: string;
->>>>>>> 1dbb61c73aaa3ff4893a998049193eaa59dbe530
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
 	export const Path: string;
@@ -156,11 +147,6 @@ declare module '$env/dynamic/private' {
 		ComSpec: string;
 		DriverData: string;
 		EDITOR: string;
-<<<<<<< HEAD
-=======
-		FPS_BROWSER_APP_PROFILE_STRING: string;
-		FPS_BROWSER_USER_PROFILE_STRING: string;
->>>>>>> 1dbb61c73aaa3ff4893a998049193eaa59dbe530
 		GIT_ASKPASS: string;
 		HOME: string;
 		HOMEDRIVE: string;
@@ -196,10 +182,6 @@ declare module '$env/dynamic/private' {
 		npm_package_version: string;
 		NPM_PREFIX_NPM_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
-<<<<<<< HEAD
-=======
-		OneDrive: string;
->>>>>>> 1dbb61c73aaa3ff4893a998049193eaa59dbe530
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
 		Path: string;
