@@ -1,26 +1,6 @@
 <script>
   import Step from "./Step.svelte";
-
-  let steps = [
-    {
-      name: "Stock System",
-      icon: "fa-solid fa-store",
-      description:
-        "Smoljames Store is a a merchanising store created with Next.js, Commerce.js & Stripe! Commerce.js is a CMS for managing project and Stripe is used for all transaction handling.",
-    },
-    {
-      name: "Utlimate Todos",
-      icon: "fa-solid fa-list-check",
-      description:
-        "Test for model robustness with customized test profiles and receive exhaustive reporting on the performance and potential vulnerabilities of your model.",
-    },
-    {
-      name: "Pokédex",
-      icon: "fa-solid fa-diagram-project",
-      description:
-        "Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon).",
-    },
-  ];
+  import { steps } from "$lib/stores/steps";
 </script>
 
 <main class="flex flex-col flex-1 p-4 justify-center">
@@ -42,14 +22,15 @@
         Express.js & SQL. <span class="text-green-500">University</span> Software
         Developer.
       </p>
-      <button
-        class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl inter relative overflow-hidden px-6 py-3 group rounded-full bg-slate-200 text-slate-950"
+      <a
+        class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl inter relative overflow-hidden px-6 py-3 group rounded-full bg-slate-200 text-slate-950 cursor-pointer"
+        href="#contact"
       >
         <div
           class="absolute top-0 right-full w-full h-full bg-green-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
         />
         <h4 class="relative z-9">Get in touch &rarr;</h4>
-      </button>
+      </a>
     </div>
   </section>
   <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
@@ -103,7 +84,7 @@
       </Step>
     </div>
   </section>
-  <section class="py-20 lg:py-32 flex flex-col gap-24" id="contact">
+  <section class="py-32 flex flex-col gap-24" id="contact">
     <div class="flex flex-col gap-2 text-center">
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
         Get in <span class="inter text-green-500">Touch</span>

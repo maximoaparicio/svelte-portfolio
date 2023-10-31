@@ -1,14 +1,10 @@
 <script>
   import { Sun, Moon } from "lucide-svelte";
   import { theme } from "$lib/stores/theme";
+  import { tabs } from "$lib/stores/tabs";
   import { setContext } from "svelte";
 
   export let y;
-
-  let tabs = [
-    { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
-  ];
 
   setContext("theme", theme);
 
