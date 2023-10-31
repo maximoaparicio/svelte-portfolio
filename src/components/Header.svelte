@@ -1,5 +1,5 @@
 <script>
-  import { Sun, Moon } from "lucide-svelte";
+  import { Sun, Moon, MessagesSquare } from "lucide-svelte";
   import { theme } from "$lib/stores/theme";
   import { tabs } from "$lib/stores/tabs";
   import { setContext } from "svelte";
@@ -38,12 +38,20 @@
         <p>{tab.name}</p>
       </a>
     {/each}
-    <button on:click={toggleTheme}>
-      {#if $theme === "light"}
-        <Sun />
-      {:else}
-        <Moon />
-      {/if}
-    </button>
+    <div class="flex items-center gap-4">
+      <button on:click={toggleTheme}>
+        {#if $theme === "light"}
+          <Sun />
+        {:else}
+          <Moon />
+        {/if}
+      </button>
+      <a
+        href="https://api.whatsapp.com/send/?phone=543814057449&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <MessagesSquare />
+      </a>
+    </div>
   </div>
 </header>
