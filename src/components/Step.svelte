@@ -1,5 +1,9 @@
 <script>
-  export let step
+  import { theme } from "$lib/stores/theme";
+  import { setContext } from "svelte";
+  export let step;
+
+  setContext("theme", theme);
 </script>
 
 <a
@@ -8,7 +12,7 @@
   class="p-4 sm:p-6 md:p-8 flex flex-col gap-4 rounded-lg border border-solid border-green-700 text-center cursor-pointer group hover:border-green-400 duration-200"
 >
   <div
-    class="bg-slate-950 grid place-items-center px-4 text-5xl md:text-6xl -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 mx-auto duration-200"
+    class="dark:bg-slate-950 bg-slate-50 grid place-items-center px-4 text-5xl md:text-6xl -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 mx-auto duration-200"
   >
     <i class={step.icon} />
   </div>

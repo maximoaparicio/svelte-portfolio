@@ -1,28 +1,12 @@
 <script>
-  import { Sun, Moon } from "lucide-svelte";
-  import { theme } from "$lib/stores/theme";
+  import { Sun, Moon, MessagesSquare } from "lucide-svelte";
+  import { theme, toggleTheme } from "$lib/stores/theme";
+  import { tabs } from "$lib/stores/tabs";
   import { setContext } from "svelte";
 
   export let y;
 
-  let tabs = [
-    { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
-  ];
-
   setContext("theme", theme);
-
-  // Toggle theme
-  function toggleTheme() {
-    if (localStorage.theme === "dark") {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
-    theme.update((value) => (value === "light" ? "dark" : "light"));
-  }
 </script>
 
 <header
@@ -42,12 +26,20 @@
         <p>{tab.name}</p>
       </a>
     {/each}
-    <button on:click={toggleTheme}>
-      {#if $theme === "light"}
-        <Sun />
-      {:else}
-        <Moon />
-      {/if}
-    </button>
+    <div class="flex items-center gap-4">
+      <button on:click={toggleTheme}>
+        {#if $theme === "light"}
+          <Sun />
+        {:else}
+          <Moon />
+        {/if}
+      </button>
+      <a
+        href="https://api.whatsapp.com/send/?phone=543814057449&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <MessagesSquare />
+      </a>
+    </div>
   </div>
 </header>
