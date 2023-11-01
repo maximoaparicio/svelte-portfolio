@@ -13,7 +13,7 @@ export const steps = [
   },
   {
     name: "Vet Web Aplication",
-    icon: "fa-solid fa-diagram-project",
+    icon: "fa-solid fa-shield-dog",
     description:
       "Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon).",
   },
