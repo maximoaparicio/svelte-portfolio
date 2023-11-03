@@ -14,3 +14,17 @@ export const toggleTheme = () => {
   }
   theme.update((value) => (value === "light" ? "dark" : "light"));
 };
+
+export const setTheme = () => {
+  const darkMode =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (darkMode) {
+    document.documentElement.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    document.documentElement.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+};

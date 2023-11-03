@@ -16,11 +16,11 @@
       : " py-6 bg-transparent border-transparent")}
 >
   <i class="fa-sharp fa-solid fa-terminal" />
-  <div class="sm:flex items-center gap-4">
+  <nav class="items-center gap-4 sm:flex">
     {#each tabs as tab, index}
       <a
         href={tab.link}
-        class="duration-200 hover:text-green-500 hidden sm:flex"
+        class="hidden duration-200 hover:text-green-500 sm:flex"
         target={index === 2 ? "_blank" : ""}
       >
         <p>{tab.name}</p>
@@ -41,5 +41,5 @@
         <MessagesSquare />
       </a>
     </div>
-  </div>
+  </nav>
 </header>

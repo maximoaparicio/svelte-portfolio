@@ -3,6 +3,7 @@
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
   import { onMount } from "svelte";
+  import { setTheme } from "../lib/stores/theme";
 
   let y;
   let innerHeight = 0;
@@ -10,20 +11,6 @@
 
   function goTop() {
     document.body.scrollIntoView();
-  }
-
-  function setTheme() {
-    const darkMode =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    }
   }
 
   onMount(setTheme);
@@ -40,9 +27,9 @@
   >
     <button
       on:click={goTop}
-      class="ml-auto rounded-full p-4 dark:bg-slate-900 text-green-500 dark:hover:bg-slate-800 cursor-pointer hover:bg-slate-300 bg-slate-200"
+      class="p-4 ml-auto text-green-500 rounded-full cursor-pointer dark:bg-slate-900 dark:hover:bg-slate-800 hover:bg-slate-300 bg-slate-200"
     >
-      <i class="fa-solid fa-arrow-up grid place-items-center" />
+      <i class="grid fa-solid fa-arrow-up place-items-center" />
     </button>
   </div>
   <Header {y} />
