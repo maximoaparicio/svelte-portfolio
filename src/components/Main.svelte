@@ -1,6 +1,7 @@
 <script>
   import Contact from "./Contact.svelte";
   import Projects from "./Projects.svelte";
+  import Button from "./ui/GoToButton.svelte";
 </script>
 
 <main class="flex flex-col justify-center flex-1 p-4">

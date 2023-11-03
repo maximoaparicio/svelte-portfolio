@@ -1,6 +1,6 @@
 <script>
   export let step;
-  import Button from "./Button.svelte";
+  import GoToButton from "./GoToButton.svelte";
 </script>
 
 <a
@@ -17,5 +17,5 @@
     {step.name}
   </h3>
   <slot />
-  <Button title="Go to &rarr;" />
+  <GoToButton title="Go to &rarr;" />
 </a>
