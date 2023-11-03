@@ -31,7 +31,6 @@
         />
         <h4 class="relative z-9">Get in touch &rarr;</h4>
       </a>
-      <ArrowDown />
     </div>
   </section>
   <Projects />
