@@ -12,14 +12,20 @@
       class="flex flex-col justify-center gap-2 -mt-32 text-center lg:justify-center lg:text-left md:gap-8 lg:gap-4 sm:-mt-0"
     >
       <h2 class="text-4xl font-semibold sm:text-5xl md:text-6xl">
-        Hi! I'm <span class="text-green-500 inter">Maximo</span> Dip
+        Hi! I'm <span class="dark:text-green-500 text-green-600 inter"
+          >Maximo</span
+        >
+        Dip
         <br />Full Stack
-        <span class="text-green-500 inter">Developer</span>
+        <span class="dark:text-green-500 text-green-600 inter">Developer</span>
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
-        My <span class="text-green-500"> favorite tech</span> includes
-        JavaScript (NEXT.JS, SvelteKit or Astro), TailwindCSS, React, Node.js +
-        Express.js & SQL. <span class="text-green-500">University</span> Software
+        My <span class="text-green-600 dark:text-green-500">
+          favorite tech</span
+        >
+        includes JavaScript (NEXT.JS, SvelteKit or Astro), TailwindCSS, React, Node.js
+        + Express.js & SQL.
+        <span class="text-green-600 dark:text-green-500">University</span> Software
         Developer.
       </p>
       <a
@@ -27,7 +33,7 @@
         href="#contact"
       >
         <div
-          class="absolute top-0 z-0 w-full h-full duration-200 bg-green-500 right-full opacity-20 group-hover:translate-x-full"
+          class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
         />
         <h4 class="relative z-9">Get in touch &rarr;</h4>
       </a>
