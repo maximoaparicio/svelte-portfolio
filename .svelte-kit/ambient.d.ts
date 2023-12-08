@@ -36,7 +36,6 @@ declare module '$env/static/private' {
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
-	export const CONDA_PROMPT_MODIFIER: string;
 	export const DriverData: string;
 	export const EDITOR: string;
 	export const HOME: string;
@@ -56,7 +55,6 @@ declare module '$env/static/private' {
 	export const npm_config_global_prefix: string;
 	export const npm_config_init_module: string;
 	export const npm_config_local_prefix: string;
-	export const npm_config_metrics_registry: string;
 	export const npm_config_node_gyp: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_npm_version: string;
@@ -76,17 +74,6 @@ declare module '$env/static/private' {
 	export const OS: string;
 	export const Path: string;
 	export const PATHEXT: string;
-	export const PNPM_HOME: string;
-	export const POSH_AZURE_ENABLED: string;
-	export const POSH_CURSOR_COLUMN: string;
-	export const POSH_CURSOR_LINE: string;
-	export const POSH_GIT_ENABLED: string;
-	export const POSH_INSTALLER: string;
-	export const POSH_PID: string;
-	export const POSH_SHELL_VERSION: string;
-	export const POSH_THEME: string;
-	export const POSH_THEMES_PATH: string;
-	export const POWERLINE_COMMAND: string;
 	export const PROCESSOR_ARCHITECTURE: string;
 	export const PROCESSOR_IDENTIFIER: string;
 	export const PROCESSOR_LEVEL: string;
@@ -149,7 +136,6 @@ declare module '$env/dynamic/private' {
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
 		ComSpec: string;
-		CONDA_PROMPT_MODIFIER: string;
 		DriverData: string;
 		EDITOR: string;
 		HOME: string;
@@ -169,7 +155,6 @@ declare module '$env/dynamic/private' {
 		npm_config_global_prefix: string;
 		npm_config_init_module: string;
 		npm_config_local_prefix: string;
-		npm_config_metrics_registry: string;
 		npm_config_node_gyp: string;
 		npm_config_noproxy: string;
 		npm_config_npm_version: string;
@@ -189,17 +174,6 @@ declare module '$env/dynamic/private' {
 		OS: string;
 		Path: string;
 		PATHEXT: string;
-		PNPM_HOME: string;
-		POSH_AZURE_ENABLED: string;
-		POSH_CURSOR_COLUMN: string;
-		POSH_CURSOR_LINE: string;
-		POSH_GIT_ENABLED: string;
-		POSH_INSTALLER: string;
-		POSH_PID: string;
-		POSH_SHELL_VERSION: string;
-		POSH_THEME: string;
-		POSH_THEMES_PATH: string;
-		POWERLINE_COMMAND: string;
 		PROCESSOR_ARCHITECTURE: string;
 		PROCESSOR_IDENTIFIER: string;
 		PROCESSOR_LEVEL: string;

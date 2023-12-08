@@ -1,4 +1,4 @@
-<section class="flex flex-col gap-24 py-32" id="contact">
+<section class={`flex flex-col gap-24 py-32`} id="contact">
   <div class="flex flex-col gap-2 text-center">
     <h3 class="text-3xl font-semibold sm:text-4xl md:text-5xl">
       Get in <span class="text-[#3EB489] inter">Touch</span>

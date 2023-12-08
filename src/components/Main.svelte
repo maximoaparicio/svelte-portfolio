@@ -1,8 +1,9 @@
 <script>
   import Contact from "./Contact.svelte";
   import Projects from "./Projects.svelte";
+  import OtherTabIcon from "./ui/svg/OtherTabIcon.svelte";
 
-  let pdfUrl = "/lib/assets/_CV.pdf";
+  let pdfUrl = "/lib/assets/MaximoDipAparicio.pdf";
 
   const handleClick = () => {
     window.open(pdfUrl, "_blank");
@@ -43,26 +44,9 @@
           <div
             class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
           />
-          <button
-            class="flex gap-2"
-            href="$lib/assets/_CV.pdf"
-            on:click={handleClick}
-          >
+          <button class="flex gap-2" href={pdfUrl} on:click={handleClick}>
             <h4 class="relative z-9">Resume</h4>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-              />
-            </svg>
+            <OtherTabIcon />
           </button>
         </button>
         <button
@@ -77,20 +61,7 @@
             target="_blank"
           >
             <h4 class="relative z-9">Linkedin</h4>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-              />
-            </svg>
+            <OtherTabIcon />
           </a>
         </button>
       </div>
