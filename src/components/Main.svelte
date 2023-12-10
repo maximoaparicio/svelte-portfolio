@@ -44,10 +44,15 @@
           <div
             class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
           />
-          <button class="flex gap-2" href={pdfUrl} on:click={handleClick}>
+          <a
+            class="flex gap-2"
+            href={pdfUrl}
+            on:click={handleClick}
+            target="_blank"
+          >
             <h4 class="relative z-9">Resume</h4>
             <OtherTabIcon />
-          </button>
+          </a>
         </button>
         <button
           class="relative px-6 py-3 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"

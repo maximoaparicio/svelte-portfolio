@@ -12,9 +12,10 @@
       Title: "Dog360",
       Subtitle: "Aplicacion para veterinaria",
       Description:
-        "Login. Rutas protegidas. Roles. Turnos. Creación de mascota. Adopción. Imprimir turno. Consultas.",
+        "Login. Protected routes. Roles. Shifts. Pet creation. Adoption. Print shift. Consultations.",
       Icon: "PawPrint",
-      LivePreview: "",
+      Image: "/lib/assets/home.png",
+      LivePreview: "https://github.com/maximoaparicio",
     },
     {
       Title: "FaceLock AI",
@@ -48,21 +49,34 @@
           <LucideIcon name={project.Icon} />
         </div>
         <div>
-          <span class="items-center hidden gap-2 cursor-pointer sm:flex"
-            >live preview
+          <span class="flex items-center gap-2 cursor-pointer">
+            <a target="_blank" href={project.LivePreview}>live demo</a>
             <OtherTabIcon />
           </span>
         </div>
       </div>
-      <div>
-        <span class="flex items-center gap-2 cursor-pointer sm:hidden"
-          >live preview
-          <OtherTabIcon />
-        </span>
+      <div class="py-2">
+        <img
+          src={project.Image}
+          alt=""
+          class="object-cover rounded max-sm:aspect-square"
+        />
+      </div>
+      <div class="flex flex-col gap-2">
         <h6 class="text-lg">{project.Subtitle}</h6>
-        <p class="text-sm">
+        <p class="text-sm max-sm:hidden">
           {project.Description}
         </p>
+        <button
+          class="relative px-6 py-2 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"
+        >
+          <div
+            class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
+          />
+          <a class="flex gap-2" target="_blank" href={project.LivePreview}>
+            <p class="relative z-9">details</p>
+          </a>
+        </button>
       </div>
     </div>
   {/each}
@@ -71,7 +85,7 @@
 <style>
   .card {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 12px;
     border-radius: 8px;
     margin: 16px;
     text-align: left;
