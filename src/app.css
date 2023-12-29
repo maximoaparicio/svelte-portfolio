@@ -2,58 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-.inter {
-  font-family: "Inter", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 
 @keyframes jumbo {
   from {
-      background-position: 50% 50%, 50% 50%;
+    background-position:
+      50% 50%,
+      50% 50%;
   }
   to {
-      background-position: 350% 50%, 350% 50%;
+    background-position:
+      350% 50%,
+      350% 50%;
   }
 }
 
 .jumbo {
   --stripes: repeating-linear-gradient(
-      100deg,
-      #fff 0%,
-      #fff 7%,
-      transparent 10%,
-      transparent 12%,
-      #fff 16%
+    100deg,
+    #fff 0%,
+    #fff 7%,
+    transparent 10%,
+    transparent 12%,
+    #fff 16%
   );
   --stripesDark: repeating-linear-gradient(
-      100deg,
-      #000 0%,
-      #000 7%,
-      transparent 10%,
-      transparent 12%,
-      #000 16%
+    100deg,
+    #000 0%,
+    #000 7%,
+    transparent 10%,
+    transparent 12%,
+    #000 16%
   );
   --rainbow: repeating-linear-gradient(
-      100deg,
-      #60a5fa 10%,
-      #e879f9 15%,
-      #60a5fa 20%,
-      #5eead4 25%,
-      #60a5fa 30%
+    100deg,
+    #60a5fa 10%,
+    #e879f9 15%,
+    #60a5fa 20%,
+    #5eead4 25%,
+    #60a5fa 30%
   );
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
-  background-position: 50% 50%, 50% 50%;
+  background-position:
+    50% 50%,
+    50% 50%;
 
   filter: blur(10px) invert(100%);
 

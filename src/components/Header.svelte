@@ -1,6 +1,6 @@
 <script>
   import { Sun, Moon, MessagesSquare } from "lucide-svelte";
-  import { theme, toggleTheme } from "$lib/stores/theme";
+  import { theme, toggleTheme } from "$lib/theme";
   import { tabs } from "$lib/stores/tabs";
   import { setContext } from "svelte";
 

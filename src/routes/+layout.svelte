@@ -3,7 +3,7 @@
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
   import { onMount } from "svelte";
-  import { setTheme } from "../lib/stores/theme";
+  import { setTheme } from "../lib/theme";
 
   let y;
   let innerHeight = 0;
