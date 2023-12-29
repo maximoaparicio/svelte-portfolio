@@ -23,8 +23,11 @@
           >Maximo</span
         >
         Dip
-        <br />Fullstack
-        <span class="text-green-600 dark:text-[#3EB489] inter">Developer</span>
+        <p>
+          Fullstack
+          <span class="text-green-600 dark:text-[#3EB489] inter">Developer</span
+          >
+        </p>
       </h1>
       <h3 class="text-2xl sm:text-3xl opacity-90">
         <span class="text-green-600 dark:text-[#3EB489] opacity-70"
