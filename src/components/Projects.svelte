@@ -37,7 +37,7 @@
       Curious to see my
       <span class="text-[#3EB489]">work</span>?
     </h3>
-    <p class="text-xl font-light">Take a look</p>
+    <p class="text-xl opacity-90">Take a look</p>
   </header>
   {#each projects as project}
     <div class="flex flex-col justify-between card">

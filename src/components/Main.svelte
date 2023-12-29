@@ -26,11 +26,12 @@
         <br />Fullstack
         <span class="text-green-600 dark:text-[#3EB489] inter">Developer</span>
       </h1>
-      <h3 class="text-2xl sm:text-3xl">
-        <span class="text-green-600 dark:text-[#3EB489]">University</span> Software
-        Developer.
+      <h3 class="text-2xl sm:text-3xl opacity-90">
+        <span class="text-green-600 dark:text-[#3EB489] opacity-70"
+          >University</span
+        > Software Developer.
       </h3>
-      <p class="text-light sm:text-lg md:text-xl">
+      <p class="text-light sm:text-lg md:text-xl opacity-80 text-balance">
         My <span class="text-green-600 dark:text-[#3EB489]">
           favorite tech</span
         >
@@ -39,7 +40,7 @@
       </p>
       <div class="grid-cols-none">
         <button
-          class="relative px-6 py-3 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"
+          class="relative px-3 py-2 sm:px-6 sm:py-3 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"
         >
           <div
             class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
@@ -55,7 +56,7 @@
           </a>
         </button>
         <button
-          class="relative px-6 py-3 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"
+          class="relative px-3 py-2 sm:px-6 sm:py-3 overflow-hidden text-base rounded-full cursor-pointer blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl inter group bg-slate-200 text-slate-950"
         >
           <div
             class="absolute top-0 z-0 w-full h-full duration-200 bg-green-600 dark:bg-green-500 right-full opacity-20 group-hover:translate-x-full"
